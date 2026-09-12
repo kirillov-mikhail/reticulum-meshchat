@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./storage:/app/storage
+      - ./send_dir:/app/send_dir
